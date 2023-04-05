@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pWidth: 100vw;
+    --pHeight: 100vh;
+    --chWidth: 90%;
+    --chHeight: 90%;
+    --bR: 15px;
+    --bckGb: rgba(0,0,0,1);
+    --bckGw: rgba(255,255,255,1);
+    }
+
+#main-cont{
+    width: var(--pWidth);
+    height: var(--pHeight);
+}
+
+#regis-cont{
+    background-color: blue;
+    width: var(--pWidth);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#regis-cont > form{
+    background-color: #FFF;
+    width: 50%;
+}
+
+#appoint-cont{
+    background-color: aqua;
+    width: var(--pWidth);
+    height: 50vh;
+}
+
+#image-cont{
+    background-color: red;
+    width: 50%;
+}
+
