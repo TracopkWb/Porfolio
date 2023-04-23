@@ -28,21 +28,21 @@
                 <input type="text" id="oName" name="lname"><br>
                 <label for="lname">Owner's Last name:</label><br>
                 <input type="text" id="oLastName" name="lname"><br>
-                <label for="phone">Enter your phone number:</label>
-
+                <label for="phone">Enter your phone number:</label><br>
                 <input type="tel" 
-                        id="phone" 
-                        name="phone" 
-                        pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}[0-9]{2}" 
-                        maxlength="10"
-                        required> <br>
+                        id="phoneNumber" 
+                        placeholder="Phone Number"
+                        required><br>
                 <small>Format: 123-456-7890</small>
-
+                <p id="log"></p>
             </form>
             <div id="image-cont">
+                <p id="add-pic">Add picture of dog</p>
+                <input id="pic-input" type="file" onchange="showFile()">
+                <img id="dogPic" src="" alt="">
             </div>
         </div>
     </div>
 </body>
-
+<script type="text/javascript" src="script.js"></script>
 </html>
